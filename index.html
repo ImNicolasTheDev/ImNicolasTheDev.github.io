@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="loading.css" type="text/css"/>
+        <link rel="stylesheet" href="common.css" type="text/css"/>
+        <link href="https://api.fontshare.com/css?f[]=gambetta@2,2&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="background.css" type="text/css"/>
+        <link rel="stylesheet" href="index.css" type="text/css"/>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <title>Portfolio de Nicolas BLONDEAU</title>
+    </head>
+    <body>
+        <!--Loading animation-->
+        <div class="loader loader-active">
+            <div class="loading">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <!--The NavBar-->
+        <nav class="navMenu">
+            <a href="#a-propos">A propos</a>
+            <a href="#formation">Formation</a>
+            <a href="#competences">Compétences</a>
+            <a href="#divers">Divers</a>
+            <a href="contact.html">Contact</a>
+            <a href="credits.html">Credits</a>
+        </nav>
+        <div id="travaux">
+            <section><img src="work.png" alt="Image travaux" width="80px"/></section>
+        </div>
+        <div class="layout">
+            <div class="headTitle">
+                <h1 id="title">Je suis </h1>
+                <div id="titleName">Nicolas Blondeau,</div>
+                <h2>Étudiant en première année de Bachelor Universitaire Technologique Informatique à Clermont-Ferrand (63)</h2>
+            </div>
+            <div id="a-propos"></div>
+            <br/>
+            <div class="sectionImage">
+                <section>
+                    <h1 class="title">A propos</h1>
+                    <p><b>Passionné</b> par l'informatique depuis le collège, j'ai décidé de me lancer dans un <b>BUT Informatique.</b><br/>
+                        J'ai <b>l'envie</b> de réaliser des <b>projets</b>, et de satisfaire les clients et ainsi être fier du résultat.
+                        Aussi, mon objectif est de devenir développeur <i>full-stack</i>.<br/>
+                        Je souhaite acquérir les <b>compétences</b> nécessaires grâce à ma formation, mais également par le biais d'une <b>alternance.</b><br/>
+                        <br/>
+                        Je recherche donc une alternance à compter du mois de <u>septembre 2023.</u><br/>
+                        <i>Pour plus d'informations à propos de l'alternance, <u><a href="contact.html">me contacter ici</a></u>.</i>
+                    </p>
+                </section>
+                <img alt="flower :>" src="Images/flower1.png"/>
+            </div>
+            <br/>
+            <div id="formation"></div>
+            <br/>
+            <div class="sectionImage">
+                <img alt="flower :>" src="Images/flower3.png"/>
+                <section>
+                    <h1 class="title">Cursus - Formation</h1>
+                    <p><b>Institut Universitaire Technologique - <u>Informatique</u></b><br/>
+                        Clermont-Ferrand (63)<br/><br/>
+                        <i>Depuis septembre 2022, j'ai intégré la formation proposée à Aubière en Informatique.</i><br/>
+                    </p>
+                    <br/>
+                    <p><b>Lycée Polyvalent Paul-Constans - <u>Sciences et Technologies de l'Industrie et du Développement Durable (STI2D)</u></b><br/>
+                        Montluçon (03)<br/><br/>
+                        <i>De septembre 2019 à Juin 2020, j'ai fait une seconde Générale et Technologique. Puis, par envie de me spécialiser, j'ai décidé de m'orienter vers
+                            une<br/> première en STI2D. Ensuite, lors du passage en terminale, j'ai finalement choisi la spécialité Systèmes d'Information et Numérique (SIN).
+                            <br/><br/>
+                            Enfin, j'ai obtenu le Baccalauréat avec mention <u>assez bien</u>.
+                        </i><br/>
+                    </p>
+                    <br/>
+                </section>
+            </div>
+            <br/>
+            <div id="competences"></div>
+            <br/>
+            <div class="sectionImage">
+                <section>
+                    <h1 class="title">Compétences</h1>
+                    <p><b>Techniques :</b><br/></p>
+                    <ul>
+                        <li>Développer des applications informatiques simples</li>
+                        <li>Appréhender et construire des algorithmes</li>
+                        <li>Installer et configurer un poste de travail</li>
+                        <li>Concevoir et mettre en place une base de données à partir d’un cahier des charges client</li>
+                        <li>Identifier les besoins métiers des clients et des utilisateurs</li>
+                        <li>Identifier ses aptitudes pour travailler dans une équipe</li>
+                    </ul>
+                    <br/>
+                    <p><b>Qualités</b><br/>
+                    <ul>
+                        <li>La créativité</li>
+                        <li>La curiosité</li>
+                        <li>L'esprit d'équipe</li>
+                        <li>La communication</li>
+                        <li>La patience</li>
+                    </ul>
+                    </p>
+                </section>
+                <img alt="flower :>" src="Images/flower2.png"/>
+            </div>
+        </div>
+
+        <!--When the whole page is loaded, it removes the class "loader-active" 
+        from the loader, so it disappears (CSS in loader : display: none;)-->
+        <script>
+            window.addEventListener("load", () => {
+                document.querySelector(".loader").classList.remove("loader-active");
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="loading.css" type="text/css"/>
+        <link rel="stylesheet" href="common.css" type="text/css"/>
+        <link rel="stylesheet" href="background.css" type="text/css"/>
+        <link rel="stylesheet" href="contact.css" type="text/css"/>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <title>Portfolio de Nicolas BLONDEAU</title>
+    </head>
+    <body>
+        <!--Loading animation-->
+        <div class="loader loader-active">
+            <div class="loading">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <!--The NavBar-->
+        <nav class="navMenu">
+            <a href="index.html">A propos</a>
+            <a href="index.html">Formation</a>
+            <a href="index.html">Compétences</a>
+            <a href="index.html">Divers</a>
+            <a href="contact.html">Contact</a>
+            <a href="credits.html">Crédits</a>
+        </nav>
+
+        <div class="layout">
+            <section>
+                <h1 class="title">Contactez moi ici :</h1>
+                <br/>
+                <br/>
+                <h2><u>LinkedIn :</u> <a href="https://www.linkedin.com/in/nicolas-blondeau-59b88226b/" target="_blank">Mon profil LinkedIn.</a></h2>
+                <br/>
+                <h2><u>Mail :</u> <a href="mailto:Nicolas.BLONDEAU@etu.uca.fr" target="_blank">Nicolas.BLONDEAU@etu.uca.fr</a></h2>
+                <br/>
+                <h2><u>GitHub :</u> <a href="https://github.com/ImNicolasTheDev" target="_blank">Mon profil GitHub.</a></h2>
+            </section>
+        </div>
+
+        <!--When the whole page is loaded, it removes the class "loader-active" 
+        from the loader, so it disappears (CSS in loader : display: none;)-->
+        <script>
+            window.addEventListener("load", () => {
+                document.querySelector(".loader").classList.remove("loader-active");
+            });
+        </script>
+    </body>
+</html>

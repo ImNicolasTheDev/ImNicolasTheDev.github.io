@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="loading.css" type="text/css"/>
+        <link rel="stylesheet" href="common.css" type="text/css"/>
+        <link rel="stylesheet" href="background.css" type="text/css"/>
+        <link rel="stylesheet" href="credits.css" type="text/css"/>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <title>Portfolio de Nicolas BLONDEAU</title>
+    </head>
+    <body>
+        <!--Loading animation-->
+        <div class="loader loader-active">
+            <div class="loading">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <!--The NavBar-->
+        <nav class="navMenu">
+            <a href="index.html">A propos</a>
+            <a href="index.html">Formation</a>
+            <a href="index.html">Compétences</a>
+            <a href="index.html">Divers</a>
+            <a href="contact.html">Contact</a>
+            <a href="credits.html">Crédits</a>
+        </nav>
+
+        <div class="layout">
+            <section>
+                <h1 class="title">Remerciements à :</h1>
+                <br/><br/>
+                <h2><b>Manuel Pinto</b> pour l'idée du fondu gradient à l'arrière plan.</h2>
+                <p>Retrouvez le ici : <a href="https://codepen.io/P1N2O" target="_blank">CodePen</a></p>
+                <br/>
+                <h2><b>Andreas Storm</b> pour l'idée de l'animation lors du chargement.</h2>
+                <p>Retrouvez le ici : <a href="https://codepen.io/avstorm" target="_blank">CodePen</a></p>
+                <br/>
+                <h2><b>Freepik</b> pour la collection d'images fournie.</h2>
+                <p>Retrouvez les ici : <a href="https://www.freepik.com/free-vector/hand-drawn-one-line-art-illustration_22754372.htm">Freepik</a></p>
+                
+            </section>
+        </div>
+
+        <!--When the whole page is loaded, it removes the class "loader-active" 
+        from the loader, so it disappears (CSS in loader : display: none;)-->
+        <script>
+            window.addEventListener("load", () => {
+                document.querySelector(".loader").classList.remove("loader-active");
+            });
+        </script>
+    </body>
+</html>
