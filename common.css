@@ -98,3 +98,7 @@ section:hover {
 	visibility: visible;
 	transform: scaleX(1);
 }
+
+.layout p, .layout a, .layout li {
+	font-size: large;
+}

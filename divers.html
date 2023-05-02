@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="loading.css" type="text/css"/>
+        <link rel="stylesheet" href="common.css" type="text/css"/>
+        <link rel="stylesheet" href="background.css" type="text/css"/>
+        <link rel="stylesheet" href="divers.css" type="text/css"/>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <title>Portfolio de Nicolas BLONDEAU</title>
+    </head>
+    <body>
+        <!--Loading animation-->
+        <div class="loader loader-active">
+            <div class="loading">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <!--The NavBar-->
+        <nav class="navMenu">
+            <a href="index.html">A propos</a>
+            <a href="index.html">Formation</a>
+            <a href="index.html">Compétences</a>
+            <a href="divers.html">Divers</a>
+            <a href="contact.html">Contact</a>
+            <a href="credits.html">Crédits</a>
+        </nav>
+
+        <div class="layout">
+            <section>
+                <h1 class="title">Voici quelques exemples de projets que j'ai réalisé :</h1>
+                <br/>
+                <br/>
+                <h2><u>Un site web responsive sur la thématique du skate :</u> <a href="https://github.com/ImNicolasTheDev/SkateUnity.github.io" target="_blank">Lien GitHub.</a></h2>
+                <br/>
+                <div class="layoutImg">
+                    <img src="Images/skateUnity1.png" alt="SkateUnity" width="75%" height="auto"/>
+                </div>
+                <br/>
+                <div class="layoutImg">
+                    <img src="Images/skateUnity2.png" alt="SkateUnity" width="55%" height="auto"/>
+                    <img src="Images/skateUnity3.png" alt="SkateUnity" width="40%" height="auto"/>
+                </div>
+                <br/>
+                <h2><u>Une multitude de compositions,</u> notamment de la MAO (Musique Assistée par Ordinateur) sur le logiciel <b>Open-Source LMMS :</b></h2>
+                <div class="layoutImg">
+                    <img src="Images/lmmsExample.png" alt="SkateUnity" width="70%" height="auto"/>
+                </div>
+                <br/>
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1438360795&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/shysudo" title="Shysudo" target="_blank" style="color: #cccccc; text-decoration: none;">Shysudo</a> · <a href="https://soundcloud.com/shysudo/harmony" title="Harmony - Part 2" target="_blank" style="color: #cccccc; text-decoration: none;">Harmony - Part 2</a></div>
+                <br/>
+            </section>
+        </div>
+
+        <!--When the whole page is loaded, it removes the class "loader-active" 
+        from the loader, so it disappears (CSS in loader : display: none;)-->
+        <script>
+            window.addEventListener("load", () => {
+                document.querySelector(".loader").classList.remove("loader-active");
+            });
+        </script>
+    </body>
+</html>
